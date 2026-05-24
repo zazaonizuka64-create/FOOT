@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "FootballApp",
+    "slug": "football-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0A0A",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#E31E24"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.footballapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#E31E24"
+      },
+      "package": "com.yourname.footballapp",
+      "statusBar": {
+        "backgroundColor": "#0A0A0A",
+        "style": "light"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "apiFootballKey": "YOUR_API_FOOTBALL_KEY_HERE",
+      "eas": {
+        "projectId": "cf68649c-32b4-4141-b14b-4beddb035031"
+      }
+    }
+  }
+}
